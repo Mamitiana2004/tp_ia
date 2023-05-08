@@ -1,0 +1,15 @@
+{
+    "name": "tp/ai",
+    "description": "ai",
+    "autoload": {
+        "psr-4": {
+            "Tp\\Ai\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "didy"
+        }
+    ],
+    "require": {}
+}
