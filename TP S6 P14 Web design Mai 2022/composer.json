@@ -58,5 +58,8 @@
         "sort-packages": true
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "dependencies": {
+        "@popperjs/core": "^2.11.7"
+    }
 }
