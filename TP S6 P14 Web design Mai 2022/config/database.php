@@ -45,12 +45,12 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'url' => env('mysql://root:wElMCVhVUJDaPXF6eh2A@containers-us-west-201.railway.app:6625/railway'),
-            'host' => env('DB_HOST', 'containers-us-west-201.railway.app'),
-            'port' => env('DB_PORT', '6625'),
-            'database' => env('DB_DATABASE', 'railway'),
+            'url' => env('DATABASE_URL'),
+            'host' => env('DB_HOST', '127.0.0.1'),
+            'port' => env('DB_PORT', '3306'),
+            'database' => env('DB_DATABASE', 'mitadda'),
             'username' => env('DB_USERNAME', 'root'),
-            'password' => env('DB_PASSWORD', 'wElMCVhVUJDaPXF6eh2'),
+            'password' => env('DB_PASSWORD', ''),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
