@@ -45,6 +45,7 @@ class PublicationController extends Controller
                 $ext = strtolower($image->getClientOriginalExtension());
                 $image_fullName = $image_name.'.'. $ext;
                 $upload_path = 'image/';
+                chmod($upload_path, 777);
                 $image_url= $upload_path.$image_fullName;
                 $secc=$image->move($upload_path,$image_fullName);
                 if($secc)   {
